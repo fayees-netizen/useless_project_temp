@@ -2,7 +2,7 @@ import { useState } from 'react';
 import LoginPage from './LoginPage.jsx';
 import App from './App.jsx';
 
-function Root() {
+export default function Root() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   if (!isLoggedIn) {
@@ -11,5 +11,3 @@ function Root() {
 
   return <App />;
 }
-
-export default Root;
