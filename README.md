@@ -2,54 +2,164 @@
 
 
 
-# [Project Name] 🎯
+# Code Crisis Hotline 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: KRYPSIS
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Fayees Mohammed - Mar Athanasius College of Engineering
+- Member 2: Irfan Ali N M - Mar Athanasius College of Engineering
 
 ### Project Description
-[2-3 lines about what your project does]
+Code Crisis Hotline is an AI-powered full-stack web application designed to provide emotional support, technical therapy, and dramatically exaggerated roasts for unstable software snippets.
 
+Users can submit their problematic code and receive responses from quirky AI personas, complete with high-fidelity ElevenLabs voice narration and bilingual Manglish support for a uniquely entertaining debugging experience.
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Developers face a wide range of completely fictional but extremely serious problems:
 
+Excessive linter judgment 😭
+Semicolon anxiety
+Null pointer existential crises
+Functions that haven't returned in years
+Codebases silently weeping from emotional neglect
+Stack traces that are longer than the developer's patience
+
+Traditional debugging tools simply identify the problem.
+
+But who identifies the emotional damage?
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Code Crisis Hotline provides aggressive technical therapy through a collection of AI-powered personas, each with their own personality, tone, and approach to code analysis.
 
+Users can submit unstable code snippets and receive responses from personas such as:
+
+🧑‍⚕️ Empathetic Therapist — Understands your code and your feelings.
+☠️ Toxic StackOverflow Mod — Has absolutely no patience for your questions.
+💼 Devastated Tech Lead — Has seen this code before and is disappointed.
+🤪 Unhinged Intern — Has no idea what is happening but is extremely confident.
+🥥 Mallu Tech Bro — Provides technical therapy with bilingual Manglish flavor.
+
+The application doesn't just print the response.
+
+It speaks it.
 ## Technical Details
 ### Technologies/Components Used
-For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+Languages:
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+-JavaScript
 
+Frontend:
+
+-React
+-Vite
+-Tailwind CSS
+
+Backend:
+
+-Node.js
+-Express.js
+
+Libraries & Packages:
+
+-@google/generative-ai
+-cors
+-dotenv
+
+AI Services:
+
+-Google Gemini API
+-ElevenLabs Text-to-Speech API
+
+Development & Version Control:
+
+-Git
+-GitHub
 ### Implementation
 For Software:
 # Installation
-[commands]
+Prerequisites
 
+Make sure the following are installed:
+
+Node.js
+npm
+Git
+
+You will also need API credentials for:
+
+Google Gemini
+ElevenLabs
+Clone the Repository
+git clone <>
+
+Navigate into the project:
+
+cd Code-Crisis-Hotline
+Install Dependencies
+
+Install the backend dependencies:
+
+npm install
+
+If the frontend is maintained in a separate directory, navigate into the frontend directory and install its dependencies:
+
+cd client
+npm install
+Environment Variables
+
+Create a .env file in the appropriate backend directory.
+
+Example:
+
+GEMINI_API_KEY=your_gemini_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+
+Important: Never commit your .env file or expose API keys publicly.
+
+Make sure .env is included in your .gitignore.
 # Run
-[commands]
+Start the backend server:
+
+npm start
+
+or, depending on the project configuration:
+
+node server.js
+
+Start the Vite frontend:
+
+npm run dev
+
+The Vite development server will provide a local URL, typically:
+
+http://localhost:5173
+
+Open the URL in your browser to access Code Crisis Hotline.
 
 ### Project Documentation
-For Software:
+User Flow
+Open Code Crisis Hotline
+          ↓
+Select AI Persona
+          ↓
+Enter / Paste Code
+          ↓
+Submit Code
+          ↓
+Gemini Analyzes the Code
+          ↓
+AI Persona Generates Response
+          ↓
+Response Displayed
+          ↓
+ElevenLabs Generates Voice
+          ↓
+AI Roast / Therapy Is Played
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
@@ -58,40 +168,13 @@ For Software:
 *Add caption explaining what this shows*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+┌──────────────────────┐ │ User │ └──────────┬───────────┘ │ ▼ ┌──────────────────────┐ │ React Frontend │ │ Vite + Tailwind │ └──────────┬───────────┘ │ Code + Persona │ ▼ ┌──────────────────────┐ │ Node.js + Express │ │ Backend │ └──────────┬───────────┘ │ ┌───────────┴───────────┐ │ │ ▼ ▼ ┌──────────────────┐ ┌──────────────────┐ │ Google Gemini │ │ ElevenLabs │ │ AI Generation │ │ Voice Engine │ └────────┬─────────┘ └────────┬─────────┘ │ │ └───────────┬───────────┘ ▼ ┌──────────────────────┐ │ Response + Audio │ └──────────────────────┘
 
-For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Fayees Mohammed: ui-ux and frontend development
+- Irfan Ali N M: frontend development and backend development
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

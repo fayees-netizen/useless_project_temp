@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Quicksand', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.font-body {
+  font-family: 'Quicksand', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.font-display {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+.font-mono {
+  font-family: 'Space Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+
+.text-ink {
+  color: #1E2A38;
+}
+
+.border-ink {
+  border-color: #1E2A38;
+}
+
+.bg-confetti {
+  background-color: #FFF9EC;
+  background-image:
+    radial-gradient(circle, #FFD23F 3px, transparent 3px),
+    radial-gradient(circle, #FF4D4D 3px, transparent 3px),
+    radial-gradient(circle, #38B6FF 3px, transparent 3px);
+  background-size: 90px 90px, 90px 90px, 90px 90px;
+  background-position: 0 0, 30px 45px, 60px 15px;
+}
+
+/* Keyframes used via Tailwind's animate-[name_...] arbitrary-value utility in App.jsx */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.85) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.15) rotate(15deg); }
+}
+
+@keyframes shake {
+  10%, 90% { transform: translateX(-1px); }
+  20%, 80% { transform: translateX(2px); }
+  30%, 50%, 70% { transform: translateX(-4px); }
+  40%, 60% { transform: translateX(4px); }
+}
+
+:focus-visible {
+  outline: 3px solid rgba(47, 128, 255, 0.6);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
