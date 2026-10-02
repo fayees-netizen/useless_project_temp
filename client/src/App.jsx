@@ -126,15 +126,7 @@ function App() {
       } else {
         console.error("Audio blob is too small or request failed, check backend!");
       }
-      
-      if (audioRes.ok) {
-        const audioBlob = await audioRes.blob();
-        const audioUrl = URL.createObjectURL(audioBlob);
-        currentAudio.current = new Audio(audioUrl);
-        currentAudio.current.play().catch((err) => {
-          console.error("Audio playback blocked:", err);
-        });
-      }
+
 
     } catch (err) {
       setNote('Even the therapist is overwhelmed right now. (Connection error)');
